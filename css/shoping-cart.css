@@ -1,0 +1,88 @@
+.table-container{
+   padding-top: 50px;
+}
+/* CSS cho phần label */
+.form-table label {
+    color: #333;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+/* CSS cho input */
+.form-table input[type="text"],
+.form-table input[type="radio"] {
+    border: 1px solid #cc9966;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* CSS cho phần input radio và label */
+.form-table .radio-option input[type="radio"]+label {
+    color: #555;
+    margin-left: 10px;
+}
+
+/* CSS cho phần input radio được chọn */
+.form-table .radio-option input[type="radio"]:checked+label {
+    color: #cc9966;
+}
+
+.success-message {
+    background-color: #d1e7dd;
+    color: #0c5460;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.success-message a {
+    color: #d1e7dd;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #0c5460;
+    border-radius: 3px;
+}
+
+#notify-msg {
+    background-color: #f44336;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: slide-down 0.5s ease-in-out forwards;
+    font-size: 18px;
+}
+
+#notify-msg {
+    background-color: pink;
+    color: #721c24;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: slide-down 0.5s ease-in-out forwards;
+}
+
+#notify-msg a {
+    color: pink;
+    background-color: #721c24;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

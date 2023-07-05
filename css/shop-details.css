@@ -1,0 +1,188 @@
+.kmm{
+   margin-top: 80px;
+}
+
+.size{
+   float: right;
+   margin-top: 3px;
+
+}
+.comment-box {
+   margin: auto;
+   /* position: relative; */
+   width: 50%;
+   /* display: flex; */
+   /* justify-content: baseline; */
+}
+
+#comment-input {
+   width: 100%;
+   height: 100px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   resize: none;
+   /* align-self: flex-start; */
+}
+
+#submit-button {
+   /* position: absolute; */
+   /* bottom: 10px; */
+   /* display: block;
+    */
+    /* align-self: flex-end; */
+   margin-right: 1px;
+   padding: 8px 20px;
+   background-color: #cc9966;
+   color: #fff;
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+   background-color: #efc091;
+}
+
+.comments-container {
+   width: 80%;
+   margin: 20px auto;
+   max-height: 500px;
+   overflow-y: auto;
+}
+
+.comments-list {
+   list-style: none;
+   padding: 0;
+}
+
+.comment {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.comment-content {
+   background-color: #e4dcd9;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.comment-author {
+   margin: 0;
+}
+
+.comment-text {
+   margin: 5px 0;
+}
+
+.rating-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 10vh;
+}
+
+.rating {
+   justify-content: center;
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.rating input {
+   display: none;
+}
+
+.rating label {
+   position: relative;
+   cursor: pointer;
+   color: grey;
+   opacity: 0.5;
+}
+
+.rating label:before {
+   content: '\2605';
+   font-size: 30px;
+}
+
+.rating input:checked~label {
+   color: orange;
+   opacity: 1;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+   color: orange;
+   opacity: 1;
+}
+
+h5 {
+   text-align: center;
+   font-size: 15px;
+}
+
+.rating-summary {
+   text-align: center;
+   display: flex;
+   margin: auto;
+   justify-content: center;
+}
+
+.bar-chart li {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.star {
+   font-weight: bold;
+   margin-right: 5px;
+   color: gray;
+}
+
+.bar-container {
+   width: 200px;
+   height: 10px;
+   background-color: #ddd;
+   margin-right: 10px;
+   overflow: hidden;
+}
+
+.bar {
+   height: 100%;
+   background-color: orange;
+}
+
+.count {
+   font-weight: bold;
+   color: gray;
+}
+
+.average-rating {
+   margin-right: 8%;
+}
+
+.rating {
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.total-count {
+   margin-top: 10px;
+   margin-bottom: 40px;
+}
+
+.outof5 {
+   font-size: 14px;
+   font-weight: bold;
+   color: gray;
+}
+
+h1 {
+   font-size: medium;
+}
+
+.checked {
+   color: rgb(255, 115, 0);
+}
